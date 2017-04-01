@@ -1,0 +1,5 @@
+.idea
+node_modules
+NewTS_server.iml
+test.js
+database.json

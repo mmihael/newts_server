@@ -1,0 +1,31 @@
+CREATE TABLE `appliance` (
+  `_id` int(11) NOT NULL AUTO_INCREMENT,
+
+  `id` varchar(255) NOT NULL,
+  `status` int(11),
+  `water_hardness` varchar(255),
+  `ph` float (8,8),
+  `turbidity` int(11),
+  `water_temperature` float (8,8),
+  `water_color` varchar(255),
+  `appliance_name` varchar(255),
+  `message_string` varchar(255),
+  `copper_released` float (8,8),
+  `container_ml_capacity` int(11),
+  `container_cu_level` int(11),
+  `copper_electrode_mass` int(11),
+  `water_flow` float (8,8),
+  `water_volume` int(11),
+  `key_1` varchar(255),
+  `key_2` varchar(255),
+  `key_3` varchar(255),
+  `on_time` int(11),
+  `station_ssid` varchar(255),
+  `station_pwd` varchar(255),
+
+  `deleted` tinyint(1) NOT NULL DEFAULT 0,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `edited_at` datetime,
+  `created_by` int(11),
+  PRIMARY KEY (`_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

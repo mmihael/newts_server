@@ -1,0 +1,11 @@
+{
+  "defaultEnv": "main",
+  "main": {
+    "host": "192.168.33.66",
+    "user": "root",
+    "password" : "root",
+    "database": "newts",
+    "driver": "mysql",
+    "multipleStatements": true
+  }
+}
