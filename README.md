@@ -1,5 +1,9 @@
 # NewTS Server
 
+## Setup
+- in root directory create database.json file (copy and edit example.database.json)
+- database.json is used for migrations and server mysql connection
+
 ## Start application
 ```
 npm install
