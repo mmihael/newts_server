@@ -1,13 +1,12 @@
 CREATE TABLE `appliance` (
   `_id` int(11) NOT NULL AUTO_INCREMENT,
-
-  `id` varchar(255) NOT NULL,
+  `id` int(11) NOT NULL UNIQUE,
   `status` int(11),
-  `water_hardness` varchar(255),
+  `water_hardness` int(11),
   `ph` float (8,8),
   `turbidity` int(11),
   `water_temperature` float (8,8),
-  `water_color` varchar(255),
+  `water_color` int(11),
   `appliance_name` varchar(255),
   `message_string` varchar(255),
   `copper_released` float (8,8),
@@ -22,7 +21,6 @@ CREATE TABLE `appliance` (
   `on_time` int(11),
   `station_ssid` varchar(255),
   `station_pwd` varchar(255),
-
   `deleted` tinyint(1) NOT NULL DEFAULT 0,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `edited_at` datetime,
